@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and register Form</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<img src="logo.jpg" width="125px">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="Desktops.html">Destops</a></li>
+				<li><a href="laptops.html">Laptops</a></li>
+				<li><a href="Register.html">Register</a></li>
+				<li><a href="About_us.html">About_us</a></li>
+				<li><a href="Contact_us.html">Contact_us</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log in</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+				
+			</div>
+			<div class="social-icon">
+			<img src="fb.jpg" width="38" height="38">
+			<img src="g+.jpg"  width="38" height="38">
+			<img src="twitter.jpg"  width="38" height="38">
+			
+		</div>
+		<form id="login" class="input-group">
+			<input type="text" class="input-field" placeholder="User Name" required>
+			<input type="text" class="input-field" placeholder="Enter Password" required>
+			<input type="checkbox" class="check-box"><span>Remember Password</span>
+			<button type="submit" class="submit-btn">Log in</button>
+			
+		</form>
+		<form id="register" class="input-group">
+			<input type="text" class="input-field" placeholder="User Name" required>
+			<input type="text" class="input-field" placeholder="Email Id" required>
+			<input type="text" class="input-field" placeholder="Enter Password" required>
+			<input type="checkbox" class="check-box"><span>Send me updates</span>
+			<button type="submit" class="submit-btn">Register</button>
+			
+		</form>
+
+
+			
+		</div>
+		
+	</div>
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register() {
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+
+			// body...
+		}
+		function login() {
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0px";
+
+			// body...
+		}
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
